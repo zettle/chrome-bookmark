@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "书签管理",
+    "description": "书签同步管理",
+    "version": "1.0.1",
+    "icons": {
+        "16": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+    },
+    "background": {
+        "scripts": ["./bg/axios.min.js", "./bg/index.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.baidu.com/*"],
+            "js": ["js/content.js"],
+            "css": ["css/style.css"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup/index.html",
+        "default_tilte": "书签管理"
+    },
+    "permissions": [
+        "contextMenus",
+        "notifications",
+        "bookmarks",
+        "https://zettle.top/*"
+    ]
+}

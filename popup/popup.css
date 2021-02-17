@@ -1,0 +1,34 @@
+#chrext-app {
+    width: 290px;
+    padding: 10px 0;
+}
+
+#chrext-app button {
+    border: 0 none;
+    border: 1px solid red;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    color: #fff;
+    line-height: 46px;
+}
+#chrext-app button:active {
+    background-color: #136cc7;
+}
+/* 同步到服务器 */
+#chrext-app .chrext-upload-btn {
+    margin-right: 30px;
+    background-color: #1989fa;
+    border: 1px solid #1989fa;
+}
+#chrext-app .chrext-upload-btn:active {
+    background-color: #136cc7;
+}
+/* 从服务器同步 */
+#chrext-app .chrext-synch-btn {
+    background-color: #07c160;
+    border: 1px solid #07c160;
+}
+#chrext-app .chrext-synch-btn:active {
+    background-color: #038c44;
+}
